@@ -1,23 +1,25 @@
 "use strict"
 
-class Car {
-    //properties
-    name:string=""
-    price:number=0
-    color:string=""
-    mileage:number=0
-
-    constructor(name:string,price:number,color:string,mileage:number) {
-        this.name=name
-        this.price=price
-        this.color=color
-        this.mileage=mileage
-    }
-}
-
 let navBar:HTMLElement = document.createElement("nav")
 document.body.appendChild(navBar)
 navBar.classList.add("nav-bar")
+
+// class Car {
+//     //properties
+//     name:string=""
+//     price:number=0
+//     color:string=""
+//     mileage:number=0
+
+//     constructor(name:string,price:number,color:string,mileage:number) {
+//         this.name=name
+//         this.price=price
+//         this.color=color
+//         this.mileage=mileage
+//     }
+// }
+
+
 
 
 

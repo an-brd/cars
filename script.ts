@@ -1,8 +1,20 @@
 "use strict"
 
-let navBar:HTMLElement = document.createElement("nav")
-document.body.appendChild(navBar)
-navBar.classList.add("nav-bar")
+let navBarWrapper:HTMLElement = document.createElement("div")
+document.body.appendChild(navBarWrapper)
+navBarWrapper.id = "nav-bar-wrapper"
+navBarWrapper.classList.add("wrapper")
+
+let logoDiv:HTMLElement = document.createElement("div")
+document.getElementById("nav-bar-wrapper")?.appendChild(logoDiv)
+
+let navLinks:HTMLElement = document.createElement("div")
+document.getElementById("nav-bar-wrapper")?.appendChild(navLinks)
+
+let navIcons:HTMLElement = document.createElement("div")
+document.getElementById("nav-bar-wrapper")?.appendChild(navIcons)
+
+
 
 // class Car {
 //     //properties

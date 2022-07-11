@@ -8,8 +8,44 @@ navBarWrapper.classList.add("wrapper")
 let logoDiv:HTMLElement = document.createElement("div")
 document.getElementById("nav-bar-wrapper")?.appendChild(logoDiv)
 
+
 let navLinks:HTMLElement = document.createElement("div")
 document.getElementById("nav-bar-wrapper")?.appendChild(navLinks)
+
+let usedCars:HTMLElement = document.createElement("a")
+usedCars.setAttribute("href", "#")
+usedCars.innerHTML = "Used cars"
+document.getElementById("nav-bar-wrapper")?.appendChild(usedCars)
+
+let newCars:HTMLElement = document.createElement("a")
+newCars.setAttribute("href", "#")
+newCars.innerHTML = "New cars"
+document.getElementById("nav-bar-wrapper")?.appendChild(newCars)
+
+let sellCar:HTMLElement = document.createElement("a")
+sellCar.setAttribute("href", "#")
+sellCar.innerHTML = "Sell your car"
+document.getElementById("nav-bar-wrapper")?.appendChild(sellCar)
+
+let valueCar:HTMLElement = document.createElement("a")
+valueCar.setAttribute("href", "#")
+valueCar.innerHTML = "Value your car"
+document.getElementById("nav-bar-wrapper")?.appendChild(valueCar)
+
+let carReviews:HTMLElement = document.createElement("a")
+carReviews.setAttribute("href", "#")
+carReviews.innerHTML = "Car reviews"
+document.getElementById("nav-bar-wrapper")?.appendChild(carReviews)
+
+let carLeasing:HTMLElement = document.createElement("a")
+carLeasing.setAttribute("href", "#")
+carLeasing.innerHTML = "Car leasing"
+document.getElementById("nav-bar-wrapper")?.appendChild(carLeasing)
+
+let electricCars:HTMLElement = document.createElement("a")
+electricCars.setAttribute("href", "#")
+electricCars.innerHTML = "Electric cars"
+document.getElementById("nav-bar-wrapper")?.appendChild(electricCars)
 
 let navIcons:HTMLElement = document.createElement("div")
 document.getElementById("nav-bar-wrapper")?.appendChild(navIcons)

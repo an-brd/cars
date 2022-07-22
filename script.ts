@@ -5,51 +5,60 @@ document.body.appendChild(navBarWrapper)
 navBarWrapper.id = "nav-bar-wrapper"
 navBarWrapper.classList.add("wrapper")
 
-let logoDiv:HTMLElement = document.createElement("div")
-document.getElementById("nav-bar-wrapper")?.appendChild(logoDiv)
-
-
 let navLinks:HTMLElement = document.createElement("div")
 document.getElementById("nav-bar-wrapper")?.appendChild(navLinks)
+navLinks.id = "nav-links"
 
 let usedCars:HTMLElement = document.createElement("a")
 usedCars.setAttribute("href", "#")
 usedCars.innerHTML = "Used cars"
-document.getElementById("nav-bar-wrapper")?.appendChild(usedCars)
+document.getElementById("nav-links")?.appendChild(usedCars)
 
 let newCars:HTMLElement = document.createElement("a")
 newCars.setAttribute("href", "#")
 newCars.innerHTML = "New cars"
-document.getElementById("nav-bar-wrapper")?.appendChild(newCars)
+document.getElementById("nav-links")?.appendChild(newCars)
 
 let sellCar:HTMLElement = document.createElement("a")
 sellCar.setAttribute("href", "#")
 sellCar.innerHTML = "Sell your car"
-document.getElementById("nav-bar-wrapper")?.appendChild(sellCar)
+document.getElementById("nav-links")?.appendChild(sellCar)
 
 let valueCar:HTMLElement = document.createElement("a")
 valueCar.setAttribute("href", "#")
 valueCar.innerHTML = "Value your car"
-document.getElementById("nav-bar-wrapper")?.appendChild(valueCar)
+document.getElementById("nav-links")?.appendChild(valueCar)
 
 let carReviews:HTMLElement = document.createElement("a")
 carReviews.setAttribute("href", "#")
 carReviews.innerHTML = "Car reviews"
-document.getElementById("nav-bar-wrapper")?.appendChild(carReviews)
+document.getElementById("nav-links")?.appendChild(carReviews)
 
 let carLeasing:HTMLElement = document.createElement("a")
 carLeasing.setAttribute("href", "#")
 carLeasing.innerHTML = "Car leasing"
-document.getElementById("nav-bar-wrapper")?.appendChild(carLeasing)
+document.getElementById("nav-links")?.appendChild(carLeasing)
 
 let electricCars:HTMLElement = document.createElement("a")
 electricCars.setAttribute("href", "#")
 electricCars.innerHTML = "Electric cars"
-document.getElementById("nav-bar-wrapper")?.appendChild(electricCars)
+document.getElementById("nav-links")?.appendChild(electricCars)
 
 let navIcons:HTMLElement = document.createElement("div")
 document.getElementById("nav-bar-wrapper")?.appendChild(navIcons)
+navIcons.id = "nav-icons"
 
+let savedIconDiv:HTMLElement = document.createElement("div")
+document.getElementById("nav-icons")?.appendChild(savedIconDiv)
+savedIconDiv.id = "saved-icon-div"
+let savedIcon:any = document.getElementById("heart-icon")
+document.getElementById("saved-icon-div")?.appendChild(savedIcon)
+// savedIconDiv.innerHTML = `${savedIcon}`
+savedIconDiv.innerHTML = `Saved`
+
+let signIn:HTMLElement = document.createElement("div")
+document.getElementById("nav-icons")?.appendChild(signIn)
+signIn.id = "sign-in"
 
 
 // class Car {
